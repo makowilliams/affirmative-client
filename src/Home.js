@@ -53,7 +53,7 @@ function Home() {
                         <div class="clearfix"></div>
                             <ul class="days">
                                 <script>
-                                    for( var i = 1, i <= 31, i += 1 ){
+                                    for( var i = 1; i <= 31; i += 1 ){
                                         var addClass = '';
                                 
                                         // switch( i ){
