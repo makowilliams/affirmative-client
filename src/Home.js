@@ -4,29 +4,29 @@ import './Home.css';
 function Home() {
     return (
         <body>
-            <div class="calendar">
+            <div className="calendar">
 
-                 <div class="col leftCol">
-                    <div class="content">
-                        <h1 class="date">Saturday<span>June 6th</span></h1>
-                        <h4 class="affirmaton">Affirmation of the day</h4>
-                        <div class="notes">
+                 <div className="col leftCol">
+                    <div className="content">
+                        <h1 className="date">Saturday<span>June 6th</span></h1>
+                        <h4 className="affirmaton">Affirmation of the day</h4>
+                        <div className="notes">
 
                         <p>
                              <input type="text" value="" placeholder="new note"/>
-                            <a href="#" title="Add note" class="addNote animate">+</a>
+                            <a href="#" title="Add note" className="addNote animate">+</a>
                         </p>
-                        <ul class="noteList">
-                            <li>Leg Day<a href="#" title="Remove note" class="removeNote animate">x</a></li>
+                        <ul className="noteList">
+                            <li>Leg Day<a href="#" title="Remove note" className="removeNote animate">x</a></li>
                         </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="col rightCol">
-                    <div class="content">
-                        <h2 class="year">2020</h2>
-                        <ul class="months">
+                <div className="col rightCol">
+                    <div className="content">
+                        <h2 className="year">2020</h2>
+                        <ul className="months">
                             <li><a href="#" title="Jan" data-value="1">Jan</a></li>
                             <li><a href="#" title="Feb" data-value="2">Feb</a></li>
                             <li><a href="#" title="Mar" data-value="3">Mar</a></li>
@@ -40,8 +40,8 @@ function Home() {
                             <li><a href="#" title="Nov" data-value="11">Nov</a></li>
                             <li><a href="#" title="Dec" data-value="12">Dec</a></li>
                         </ul>
-                        <div class="clearfix"></div>
-                            <ul class="weekday">
+                        <div className="clearfix"></div>
+                            <ul className="weekday">
                                 <li><a href="#" title="Mon" data-value="1">Mon</a></li>
                                 <li><a href="#" title="Tue" data-value="2">Tue</a></li>
                                 <li><a href="#" title="Wed" data-value="3">Wed</a></li>
@@ -50,23 +50,13 @@ function Home() {
                                 <li><a href="#" title="Say" data-value="6">Sat</a></li>
                                 <li><a href="#" title="Sun" data-value="7">Sun</a></li>
                             </ul>
-                        <div class="clearfix"></div>
-                            <ul class="days">
-                                <script>
-                                    for( var i = 1; i <= 31; i += 1 ){
-                                        var addClass = '';
-                                
-                                        // switch( i ){
-                                        //     case 8:
-                                        //     case 10:
-                                        //     case 27:
-                                        //         addClass = ' class="event"';
-                                        //     break;
-                                        // }
+                        <div className="clearfix"></div>
+                            <ul className="days">
+                                     for ( i = 1; i <= 31; i += 1 ) {
+                                        var addClass = ''; }
 
                                         document.write( '<li><a href="#" title="'+i+'" data-value="'+i+'"'+_addClass+'>'+i+'</a></li>' )
-                                    }
-                                </script>
+                                    
                             </ul>
                         <div class="clearfix"></div>
                     </div>

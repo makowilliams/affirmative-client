@@ -1,22 +1,28 @@
 import React from 'react';
 import './Start.css'
+import './appSnap.jpg'
 
 function Start() {
+    return (
     <body>
     <div>
-        <h1 class="startDisc">A Planner to Help You Stay organized and motivated at the same time.</h1>
+        <h1 className="startDisc">A Planner to Help You Stay organized and motivated at the same time.</h1>
     </div>
 
-    <div class="leftDesc">
-        <p class="d1">Recieve inspiring <span>affirmations daily</span></p>
-        <p class="d2">Easily log <span>new workouts</span></p>
+    <div className="leftDesc">
+        <p className="d1">Recieve inspiring <span>affirmations daily</span></p>
+        <p className="d2">Easily log <span>new workouts</span></p>
     </div>   
     
-    <div class="rightDesc">
-        <p class="d3">Simple and <span>easy-to-use</span><span>calender</span></p>
+    <div className="rightDesc">
+        <p className="d3">Simple and <span>easy-to-use</span><span>calender</span></p>
     </div>
 
-    <div class="calendar">
+    <div className='appSnap'>
+        {/* <img src={'appSnap.jpg'} />  */}
+    </div>
+
+    {/* <div class="calendar">
 
         <div class="col leftCol">
             <div class="content">
@@ -67,15 +73,15 @@ function Start() {
                     <script>
                         for( var _i = 1; _i < 31; _i += 1 ){
                             var _addClass = '';
-                            // if( _i === 12 ){ _addClass = ' class="selected"'; }
+                            if( _i === 12 ){ _addClass = ' class="selected"'; }
                             
-                            // switch( _i ){
-                            //     case 8:
-                            //     case 10:
-                            //     case 27:
-                            //         _addClass = ' class="event"';
-                            //     break;
-                            // }
+                            switch( _i ){
+                                case 8:
+                                case 10:
+                                case 27:
+                                    _addClass = ' class="event"';
+                                break;
+                            }
 
                             document.write( '<li><a href="#" title="'+_i+'" data-value="'+_i+'"'+_addClass+'>'+_i+'</a></li>' );
                         }
@@ -83,11 +89,11 @@ function Start() {
                 </ul>
                 <div class="clearfix"></div>
             </div>
-        </div>
+        </div> */}
 
         <div class="clearfix"></div>
 
-    </div>
+    
 
     <div class="button">
         <div class="center">
@@ -96,6 +102,9 @@ function Start() {
       </div>
 
 </body>
+    )
+
 }
+    
 
 export default Start;
